@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-green: #00ff88;
+  --color-brand-dark: #0a0a0a;
+  --color-brand-surface: #1a1a1a;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-dark text-white font-sans antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-brand-surface/50 border border-white/10 backdrop-blur-md rounded-2xl;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-green to-emerald-400;
+}
